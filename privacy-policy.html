@@ -61,7 +61,7 @@
 <body>
     <div class="container">
         <h1>IPMe — Privacy Policy</h1>
-        <p class="updated">Last updated: February 13, 2026</p>
+        <p class="updated">Last updated: October 26, 2026</p>
 
         <div class="summary">
             <p>IPMe does not collect, store, or transmit any personal data. Your privacy is fully protected.</p>
@@ -75,6 +75,7 @@
         <ul>
             <li><strong>IP geolocation lookup</strong> — Your public IP address is sent to a third-party geolocation API (freeipapi.com, with ipapi.co as a fallback) to determine your approximate location, ISP, and related network information. These services have their own privacy policies.</li>
             <li><strong>DNS Leak Test</strong> (Pro feature) — A DNS query is made to a test service to determine which DNS resolver is handling your requests. This is used solely to check for DNS leaks.</li>
+            <li><strong>VPN range list</strong> — About once a week, IPMe downloads a public list of IP ranges published by VPN providers from GitHub. Your public IP is compared against this list on your Mac to detect a VPN running on your router or network. Your IP address is not sent anywhere as part of this check.</li>
             <li><strong>Network Pulse</strong> (Pro feature) — TCP connections are made to public DNS servers (Cloudflare 1.1.1.1 or Google 8.8.8.8) to measure network latency. No data is transmitted beyond the connection itself.</li>
         </ul>
         <p>All network requests are made directly from your device. IPMe has no backend server, proxy, or intermediary.</p>
@@ -85,6 +86,7 @@
         <h2>Third-party services</h2>
         <ul>
             <li><strong>Apple StoreKit</strong> — Used to process In-App Purchases. Purchase transactions are handled entirely by Apple. IPMe does not operate any payment server.</li>
+            <li><strong>GitHub</strong> — Hosts the VPN range list. The download is a plain file request; like any web server, GitHub sees the requesting IP address.</li>
             <li><strong>freeipapi.com / ipapi.co</strong> — Used for IP geolocation lookups. Your public IP address is visible to these services as part of the lookup request (as it would be to any website you visit).</li>
         </ul>
 
